@@ -20,6 +20,6 @@ The player types words within a limited time based on the selected level.
 
 Practice JavaScript logic, DOM manipulation, and working with timers.
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 👉(https://mohamed-abdalla-dev.github.io/Typing-Speed-Test-Game/)
