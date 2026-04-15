@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --min-color: #2196f3;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.name {
+  background-color: var(--min-color);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "{ ";
+}
+.message span::after {
+  content: " }";
+}
+.start {
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+.start:hover {
+  background-color: #00796b;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--min-color);
+  user-select: none;
+}
+.input {
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--min-color);
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--min-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+.upcoming-words div {
+  background-color: var(--min-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border-radius: 6px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.level {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+.level div {
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.level .easy {
+  background-color: green;
+}
+.level .normal {
+  background-color: orange;
+}
+.level .hard {
+  background-color: red;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--min-color);
+}
+.finish .bad {
+  color: red;
+}

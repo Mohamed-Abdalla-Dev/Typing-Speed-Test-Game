@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/speed.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="name">Typing Speed Test Game</div>
+      <div class="container">
+        <div class="message">
+          You Are Playing Open
+          <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Second To Type The Word
+        </div>
+        <button class="start">Start Playing</button>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words">Words Will Show Here</div>
+        <div class="control">
+          <div class="time">Time Left: <span></span> Seconds</div>
+          <div class="score">
+            Score: <span class="got">0</span> From <span class="total"></span>
+          </div>
+        </div>
+        <div class="level">
+          <div class="easy">Level Easy: <span>5 Seconds</span></div>
+          <div class="normal">Level Normal: <span>3 Seconds</span></div>
+          <div class="hard">Level Hard: <span>2 Seconds</span></div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+    <audio id="good" src="./audio/sounds_good.mp3" preload="auto"></audio>
+    <audio id="failed" src="./audio/sounds_failed.mp3" preload="auto"></audio>
+    <audio id="success" src="./audio/sounds_success.mp3" preload="auto"></audio>
+    <script src="speed.js"></script>
+  </body>
+</html>
